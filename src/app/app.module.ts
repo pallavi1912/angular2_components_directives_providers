@@ -24,8 +24,8 @@ import { FriendService } from './friend.service';
   ],
   providers: [
   {provide: 'mail', useClass:MailService},
-  {provide: 'api', useValue:'http://localhost:3000/'}
- // {provide: 'friends', useClass:FriendService}
+  {provide: 'api', useValue:'http://localhost:3000/'},
+  {provide: 'friends', useClass:FriendService}
   ],
   bootstrap: [AppComponent]
 })

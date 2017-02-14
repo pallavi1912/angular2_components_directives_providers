@@ -3,6 +3,7 @@ import { FriendComponent } from 'app/friend.component';
 
 @Component({
   selector: 'app-root',
+  directives: 'FriendComponent',
   template: `<div>
      
      <ul>
@@ -17,9 +18,8 @@ import { FriendComponent } from 'app/friend.component';
      <hr>
      <my-friends></my-friends>
      {{api}}
-
-import { Component, Inject } from '@angular/core';  </div>`,
-  styleUrls: ['./app.component.css']
+ </div>`,
+   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   
